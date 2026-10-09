@@ -22,11 +22,3 @@ Projeto prático focado na leitura segura de arquivos, validação robusta de te
 * **Prevenção de Quebras (Crash):** Aprendi a envolver o código "arriscado" no bloco `try`. Se um arquivo não existir, o sistema não desliga bruscamente, ele é capturado pelo `except FileNotFoundError`.
 * **Classes de Erro Customizadas:** Criei minha própria exceção, `FormatoInvalidoError`, herdando da classe base `Exception`. Isso me permite separar erros lógicos do meu negócio (como um CPF sem ponto) de erros nativos da linguagem.
 * **O Fluxo Completo:** Compreendi que o bloco `else` só roda se tudo der certo no `try`, e que o `finally` é invencível — ele sempre rodará no final, servindo como uma "vassoura" para limpar a memória ou fechar conexões com bancos de dados.
-
-## 📝 Exemplos de Entrada e Saída
-
-**Entrada (Trecho do `dados.csv`):**
-```csv
-nome,email,cpf,telefone,data_nascimento
-Ana,ana@email.com,111.222.333-44,(11) 98888-7777,15/05/1995
-Carlos,carlos.com,22233344455,(21) 9999-8888,32/13/1990
